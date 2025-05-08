@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/layout_logout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/baseline_logout_24"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/im_foots"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/im_foots"
+        app:layout_constraintStart_toEndOf="@id/im_foots"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nanum_ext_bold"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tv_title"
+        android:textSize="24sp"
+        android:text="Logout" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
